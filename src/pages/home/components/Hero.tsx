@@ -4,7 +4,7 @@ const facts = [
   { value: "1994", label: "Founded" },
   { value: "04", label: "Squads" },
   { value: "180", label: "Players" },
-  { value: "27", label: "Titles" },
+  { value: "24", label: "Senior honours" },
 ];
 
 const fixtureCells = [

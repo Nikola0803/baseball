@@ -2,31 +2,33 @@ import { Link } from "react-router-dom";
 
 const honours = [
   {
-    label: "National League",
+    label: "National championships",
     title: "Champions",
-    count: "3",
-    years: "1999 · 2007 · 2019",
+    count: "12",
+    years: "Baseball & softball",
     icon: "ri-trophy-line",
   },
   {
     label: "National Cup",
     title: "Winners",
-    count: "2",
-    years: "2003 · 2016",
+    count: "9",
+    years: "Baseball & softball",
     icon: "ri-medal-line",
   },
   {
     label: "European Cup",
-    title: "Qualifiers",
-    count: "2",
-    years: "2007 · 2019",
+    title: "Medals",
+    count: "3",
+    years: "European competition",
     icon: "ri-award-line",
   },
   {
-    label: "Youth academy",
-    title: "Founded",
-    count: "11",
-    years: "240 kids since",
+    label: "Youth programme",
+    title: "Squads",
+    count: "12",
+    years: "From T-ball to juniors",
+    detail:
+      "Baseball5 · T-ball softball · T-ball baseball · U11 baseball · 2× U13 softball · U15 baseball · U16 softball girls · U16 baseball boys · junior softball men · junior baseball men · junior softball girls",
     icon: "ri-seedling-line",
   },
 ];
@@ -37,7 +39,7 @@ export default function HonoursSection() {
       <div className="pointer-events-none absolute inset-0 ink-grain opacity-70" />
       <div className="pointer-events-none absolute -right-[8%] -top-10 select-none">
         <span className="font-poster text-[42vw] leading-none text-outline-paper-soft opacity-70">
-          27
+          24
         </span>
       </div>
 
@@ -52,7 +54,7 @@ export default function HonoursSection() {
               The record
             </p>
             <h2 className="font-heading mt-4 text-[clamp(34px,5.8vw,72px)] uppercase leading-[0.86] tracking-[-0.03em] text-background-50">
-              Three pennants.
+              Twenty-four honours.
               <br />
               <span className="text-outline-paper">No shortcuts.</span>
             </h2>
@@ -65,10 +67,10 @@ export default function HonoursSection() {
           <div className="flex items-end gap-8">
             <div className="hidden text-right sm:block">
               <p className="font-poster text-[56px] leading-none text-background-50">
-                27
+                24
               </p>
               <p className="font-label mt-1 text-[10px] uppercase tracking-[0.2em] text-background-50/45">
-                trophies
+                senior honours
               </p>
             </div>
             <Link
@@ -120,6 +122,11 @@ export default function HonoursSection() {
                   </span>
                 </div>
               </div>
+              {item.detail && (
+                <p className="pb-6 pl-[52px] text-[13px] leading-relaxed text-background-50/50 sm:pl-[68px] md:pl-[108px]">
+                  {item.detail}
+                </p>
+              )}
             </article>
           ))}
         </div>

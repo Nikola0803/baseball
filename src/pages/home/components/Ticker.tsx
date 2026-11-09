@@ -4,7 +4,7 @@ const tickerItems = [
   "Four squads · one dugout",
   "Play loud · wear red",
   "North slope · Zagreb",
-  "27 titles",
+  "24 senior honours",
   "Official club merch",
 ];
 

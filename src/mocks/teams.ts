@@ -60,5 +60,5 @@ export const clubStats = [
   { value: "1994", label: "Founded on Medvednica" },
   { value: "4", label: "Competitive squads" },
   { value: "180+", label: "Active players" },
-  { value: "27", label: "Trophies & titles" },
+  { value: "24", label: "Senior honours" },
 ];
