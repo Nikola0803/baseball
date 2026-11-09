@@ -57,8 +57,8 @@ export const teams: Team[] = [
 ];
 
 export const clubStats = [
-  { value: "1994", label: "Founded on Medvednica" },
+  { value: "1989", label: "Founded on Medvednica" },
   { value: "4", label: "Competitive squads" },
-  { value: "180+", label: "Active players" },
-  { value: "24", label: "Senior honours" },
+  { value: "102", label: "Active players" },
+  { value: "37", label: "Titles · all categories" },
 ];

@@ -35,7 +35,7 @@ export default function ManifestoBand() {
           <div className="lg:col-span-4">
             <div className="border border-background-50/20 bg-foreground-950/40 p-5 backdrop-blur-sm md:p-6">
               <p className="font-label text-[11px] uppercase tracking-[0.22em] text-background-50/50">
-                Since 1994
+                Since 1989
               </p>
               <div className="mt-4 space-y-3.5">
                 {[

@@ -20,7 +20,7 @@ const pillars = [
 
 const milestones = [
   {
-    year: "1994",
+    year: "1989",
     title: "Nine friends, one glove",
     text: "The first practice on a borrowed patch of grass on the north slope.",
   },
@@ -47,7 +47,7 @@ const milestones = [
   {
     year: "2026",
     title: "Back in the semi-final",
-    text: "Four squads, 180 players and a cup semi-final at home on 7 November.",
+    text: "Four teams, 102 players and 37 titles across all categories.",
   },
 ];
 
@@ -91,10 +91,10 @@ export default function AboutValues() {
         <div className="mt-20" data-reveal>
           <div className="flex flex-col justify-between gap-4 border-b border-background-300 pb-5 md:flex-row md:items-end">
             <h3 className="font-heading text-[26px] uppercase leading-none text-foreground-950 md:text-[34px]">
-              Thirty-two seasons, six moments
+              Thirty-seven seasons, six moments
             </h3>
             <p className="font-label text-[11px] uppercase tracking-[0.2em] text-foreground-400">
-              1994 — 2026
+              1989 — 2026
             </p>
           </div>
 

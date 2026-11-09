@@ -39,7 +39,7 @@ export default function HonoursSection() {
       <div className="pointer-events-none absolute inset-0 ink-grain opacity-70" />
       <div className="pointer-events-none absolute -right-[8%] -top-10 select-none">
         <span className="font-poster text-[42vw] leading-none text-outline-paper-soft opacity-70">
-          24
+          37
         </span>
       </div>
 
@@ -54,7 +54,7 @@ export default function HonoursSection() {
               The record
             </p>
             <h2 className="font-heading mt-4 text-[clamp(34px,5.8vw,72px)] uppercase leading-[0.86] tracking-[-0.03em] text-background-50">
-              Twenty-four honours.
+              Thirty-seven titles.
               <br />
               <span className="text-outline-paper">No shortcuts.</span>
             </h2>
@@ -67,10 +67,10 @@ export default function HonoursSection() {
           <div className="flex items-end gap-8">
             <div className="hidden text-right sm:block">
               <p className="font-poster text-[56px] leading-none text-background-50">
-                24
+                37
               </p>
               <p className="font-label mt-1 text-[10px] uppercase tracking-[0.2em] text-background-50/45">
-                senior honours
+                all categories
               </p>
             </div>
             <Link
@@ -133,7 +133,7 @@ export default function HonoursSection() {
 
         <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2">
           <p className="font-label text-[11px] uppercase tracking-[0.2em] text-background-50/40">
-            1994 — 2026 · National League
+            1989 — 2026 · National League
           </p>
           <span className="hidden h-3 w-px bg-background-50/20 sm:block" />
           <p className="font-label text-[11px] uppercase tracking-[0.2em] text-background-50/40">

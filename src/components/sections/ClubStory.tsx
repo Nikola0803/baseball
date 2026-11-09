@@ -27,7 +27,7 @@ export default function ClubStory() {
                   First pitch
                 </p>
                 <p className="font-heading mt-1.5 text-[32px] uppercase leading-none text-background-50">
-                  1994
+                  1989
                 </p>
                 <p className="mt-2 text-[14px] leading-relaxed text-background-300">
                   A borrowed glove, nine friends and a field on the mountain.

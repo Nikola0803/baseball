@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const facts = [
-  { value: "1994", label: "Founded" },
+  { value: "1989", label: "Founded" },
   { value: "04", label: "Squads" },
-  { value: "180", label: "Players" },
-  { value: "24", label: "Senior honours" },
+  { value: "102", label: "Players" },
+  { value: "37", label: "Titles" },
 ];
 
 const fixtureCells = [
@@ -33,7 +33,7 @@ export default function Hero() {
             Zagreb · 45.87° N
           </p>
           <p className="font-label text-right text-[13px] uppercase tracking-[0.2em] text-foreground-400">
-            Est. 1994
+            Est. 1989
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export default function Hero() {
                   Est.
                 </span>
                 <span className="font-poster text-[32px] leading-none text-primary-500">
-                  1994
+                  1989
                 </span>
                 <span className="font-label mt-1 text-[10px] uppercase tracking-[0.2em] text-foreground-500">
                   Zagreb
@@ -72,7 +72,7 @@ export default function Hero() {
             <p className="mt-6 max-w-[46ch] text-[17px] leading-[1.7] text-foreground-600 md:text-[19px]">
               Four squads, one dugout, and a merch line built for the people who
               never leave before the last out. A volunteer club on the north slope
-              of Medvednica since 1994.
+              of Medvednica since 1989.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">

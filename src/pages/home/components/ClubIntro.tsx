@@ -12,10 +12,10 @@ export default function ClubIntro() {
                 01
               </span>
               <span className="inline-block h-[2px] w-9 bg-primary-500" />
-              The club · est. 1994
+              The club · est. 1989
             </p>
             <h2 className="font-heading mt-4 max-w-[18ch] text-[clamp(34px,5.6vw,68px)] uppercase leading-[0.86] tracking-[-0.03em] text-foreground-950">
-              Thirty seasons on the same field.
+              Thirty-seven seasons on the same field.
             </h2>
           </div>
           <Link
@@ -47,7 +47,7 @@ export default function ClubIntro() {
 
             <div className="pointer-events-none absolute -bottom-16 -left-3 hidden select-none md:block">
               <span className="font-poster text-[132px] leading-[0.72] text-outline-ink-soft sm:text-[170px]">
-                30
+                37
               </span>
               <span className="font-label absolute bottom-2 left-1 block text-[11px] uppercase tracking-[0.24em] text-foreground-400">
                 seasons
@@ -58,7 +58,7 @@ export default function ClubIntro() {
               <p className="font-label text-[10px] uppercase tracking-[0.2em]">
                 First pitch
               </p>
-              <p className="font-poster text-[36px] leading-none">1994</p>
+              <p className="font-poster text-[36px] leading-none">1989</p>
               <p className="mt-1.5 text-[12px] leading-snug text-background-50/85">
                 Nine friends. One borrowed glove.
               </p>
@@ -76,7 +76,7 @@ export default function ClubIntro() {
             </figure>
 
             <p className="mt-8 max-w-[54ch] text-[17px] leading-[1.75] text-foreground-600">
-              Medvednica Baseball & Softball Club started in 1994 with nine friends, a
+              Medvednica Baseball & Softball Club started in 1989 with nine friends, a
               borrowed glove and a field on the north slope of the mountain. Three
               decades later we still run it the same way: volunteers on the ground
               crew, former players coaching the kids, and every euro from the merch

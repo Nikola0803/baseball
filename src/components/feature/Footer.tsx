@@ -50,13 +50,13 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-6 max-w-sm text-[15px] leading-[1.75] text-foreground-500">
-              A club built on the north slope of Medvednica since 1994. Four
+              A club built on the north slope of Medvednica since 1989. Four
               squads, one dugout culture, and a merch line made for the people who
               fill the stands on Saturday afternoons.
             </p>
             <p className="font-label mt-5 flex items-center gap-2 text-[12px] uppercase tracking-[0.2em] text-accent-500">
               <span className="inline-block h-px w-6 bg-current" />
-              Est. 1994 · National League
+              Est. 1989 · National League
             </p>
             <div className="mt-6 flex items-center gap-2">
               {[

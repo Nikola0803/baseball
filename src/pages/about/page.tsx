@@ -14,7 +14,7 @@ export default function AboutPage() {
       <main>
         <PageHero
           breadcrumb="About"
-          eyebrow="Est. 1994 · Medvednica, Zagreb"
+          eyebrow="Est. 1989 · Medvednica, Zagreb"
           title={
             <>
               A club built on
@@ -22,14 +22,14 @@ export default function AboutPage() {
               <span className="text-primary-500">the north slope.</span>
             </>
           }
-          description="Nine friends, a borrowed glove and a patch of grass on the mountain. Thirty-two seasons later we are four squads, a free academy and a merch table that pays for the baseballs."
+          description="Nine friends, a borrowed glove and a patch of grass on the mountain. Thirty-seven seasons later we are four teams, a youth programme and a merch table that pays for the baseballs."
           image="/images/about-hero.jpg"
           imageAlt="The Medvednica club family gathered together"
           imageTitle="Medvednica Baseball Club | Our club family"
           stats={[
-            { value: "1994", label: "Founded" },
+            { value: "1989", label: "Founded" },
             { value: "4", label: "Squads" },
-            { value: "180+", label: "Players" },
+            { value: "102", label: "Players" },
           ]}
           note="Volunteer run · Zagreb, Croatia"
         />

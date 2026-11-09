@@ -1,10 +1,10 @@
 const tickerItems = [
   "Medvednica Baseball & Softball Club",
-  "Est. 1994",
+  "Est. 1989",
   "Four squads · one dugout",
   "Play loud · wear red",
   "North slope · Zagreb",
-  "24 senior honours",
+  "37 titles · all categories",
   "Official club merch",
 ];
 
