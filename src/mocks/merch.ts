@@ -25,7 +25,7 @@ export const merchCategories: MerchCategory[] = [
   "Accessories",
 ];
 
-export const merchItems: MerchItem[] = [
+const merchItemsBase: MerchItem[] = [
   {
     id: "t-shirt",
     name: "T-Shirt (Black / White)",
@@ -225,5 +225,19 @@ export const merchItems: MerchItem[] = [
       "https://readdy.ai/api/search-image?query=Studio%20product%20photo%20of%20die%20cut%20vinyl%20club%20stickers%20scattered%20flat%2C%20a%20white%20line%20art%20bear%20head%2C%20a%20mountain%20range%20outline%2C%20a%20baseball%20with%20crossed%20bats%20and%20a%20bold%20wordmark%20badge%2C%20black%20and%20white%20stickers%20on%20a%20plain%20light%20grey%20seamless%20backdrop%2C%20soft%20even%20studio%20lighting%2C%20crisp%20high%20detail%2C%20minimal%20black%20and%20white%20club%20merchandise%20e-commerce%20photography&width=800&height=800&seq=medvednica-real-stickers-18&orientation=squarish",
   },
 ];
+
+const photographedMerch: Partial<Record<string, string>> = {
+  "t-shirt": "/images/product-shirt-white.jpg",
+  "jersey-top": "/images/product-uniform.jpg",
+  hoodie: "/images/product-hoodie.jpg",
+  "baseball-cap": "/images/product-cap.jpg",
+  softball: "/images/product-softball.jpg",
+  backpack: "/images/product-backpack.jpg",
+};
+
+export const merchItems: MerchItem[] = merchItemsBase.map((item) => ({
+  ...item,
+  image: photographedMerch[item.id] ?? item.image,
+}));
 
 export const featuredMerch = merchItems.filter((item) => item.featured);

@@ -66,8 +66,8 @@ export default function MerchHero({ itemCount, lowest, highest }: MerchHeroProps
           <div className="lg:col-span-5" data-reveal data-reveal-delay="2">
             <div className="relative aspect-[16/11] w-full overflow-hidden border border-background-200 bg-background-100">
               <img
-                src="https://readdy.ai/api/search-image?query=Bright%20overhead%20flat%20lay%20of%20a%20clean%20baseball%20club%20merchandise%20collection%20arranged%20in%20a%20neat%20grid%20on%20a%20warm%20white%20surface%2C%20folded%20white%20and%20grey%20hoodie%2C%20red%20cap%2C%20wooden%20bat%2C%20white%20leather%20baseball%2C%20canvas%20tote%20and%20ceramic%20mug%20with%20simple%20line%20art%2C%20soft%20natural%20studio%20light%2C%20minimal%20styling%2C%20premium%20product%20photography%2C%20no%20readable%20text&width=1200&height=820&seq=medvednica-merch-hero-day-04&orientation=landscape"
-                alt="Medvednica official merchandise flat lay"
+                src="/images/shop-hero.jpg"
+                alt="Official Medvednica T-shirt designs"
                 title="Medvednica Baseball Club | Official merchandise collection"
                 className="h-full w-full object-cover object-center"
               />

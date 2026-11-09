@@ -23,9 +23,9 @@ export default function CtaBand({
     <section className="relative overflow-hidden border-y border-background-200 bg-background-50">
       <div className="absolute inset-0">
         <img
-          src="https://readdy.ai/api/search-image?query=Wide%20sunny%20photograph%20of%20a%20small%20baseball%20grandstand%20filled%20with%20a%20local%20crowd%20on%20a%20clear%20afternoon%2C%20simple%20bleachers%20and%20hand%20painted%20advertising%20boards%2C%20warm%20sunlight%2C%20clean%20natural%20colours%2C%20shallow%20depth%20of%20field%2C%20editorial%20sports%20photography%2C%20high%20detail%2C%20no%20readable%20text&width=1920&height=900&seq=medvednica-cta-stands-day-03&orientation=landscape"
-          alt="Supporters in the stands at Medvednica Field"
-          title="Medvednica Baseball Club | Saturday afternoon in the stands"
+          src="/images/cta.jpg"
+          alt="Medvednica players celebrating together"
+          title="Medvednica Baseball Club | Team celebration"
           className="h-full w-full object-cover object-center"
         />
         {/* white wash keeps the photo as a quiet texture behind the type */}

@@ -4,9 +4,9 @@ export default function ManifestoBand() {
   return (
     <section className="relative flex min-h-[560px] w-full items-end overflow-hidden bg-foreground-950 md:min-h-[660px]">
       <img
-        src="https://readdy.ai/api/search-image?query=Bright%20daytime%20documentary%20photograph%20of%20a%20small%20baseball%20crowd%20filling%20simple%20wooden%20bleachers%20behind%20a%20chain-link%20backstop%2C%20red%20and%20white%20club%20colours%20in%20the%20stands%2C%20warm%20late%20afternoon%20sunlight%2C%20green%20field%20beyond%2C%20film%20grain%2C%20wide%20editorial%20sports%20photography%2C%20natural%20colours%2C%20high%20detail&width=1920&height=1080&seq=medvednica-manifesto-stands-01&orientation=landscape"
-        alt="Supporters filling the stands behind the backstop at Medvednica Field"
-        title="Medvednica Baseball Club | The stands on a Saturday afternoon"
+        src="/images/manifesto.jpg"
+        alt="Medvednica team entering the field"
+        title="Medvednica Baseball Club | Together on the field"
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-foreground-950 via-foreground-950/75 to-foreground-950/35" />

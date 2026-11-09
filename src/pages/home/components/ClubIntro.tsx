@@ -31,7 +31,7 @@ export default function ClubIntro() {
           <div className="relative lg:col-span-6" data-reveal>
             <div className="relative aspect-[5/6] w-full overflow-hidden border border-foreground-950/15 bg-background-100">
               <img
-                src="https://readdy.ai/api/search-image?query=Documentary%20photograph%20of%20an%20amateur%20baseball%20team%20gathered%20in%20a%20tight%20huddle%20on%20a%20sunlit%20dirt%20infield%2C%20clean%20white%20and%20red%20uniforms%2C%20warm%20afternoon%20light%2C%20shallow%20depth%20of%20field%2C%20bright%20airy%20tones%2C%20editorial%20sports%20photography%2C%20natural%20colours%2C%20high%20detail%2C%20no%20text&width=900&height=1120&seq=medvednica-club-huddle-day-02&orientation=portrait"
+                src="/images/club-intro.jpg"
                 alt="Medvednica squad gathered in a huddle before a game"
                 title="Medvednica Baseball Club | The squad before first pitch"
                 className="h-full w-full object-cover object-top"

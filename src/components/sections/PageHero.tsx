@@ -46,7 +46,7 @@ export default function PageHero({
 
       <div className="pointer-events-none absolute -right-20 top-24 hidden h-[380px] w-[380px] lg:block crest-watermark">
         <img
-          src="https://storage.helloreaddy.io/project_files/8979afdd-4f59-418a-b171-395db2d04af6/48134d4b-cc9c-4af9-ac9d-0d1828ab7720_compressed_WhatsApp-Image-2026-10-21-at-09.53.42.webp"
+          src="/images/logo.jpg"
           alt=""
           aria-hidden="true"
           className="h-full w-full object-contain"

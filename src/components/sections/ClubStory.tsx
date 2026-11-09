@@ -10,7 +10,7 @@ export default function ClubStory() {
             <div className="relative">
               <div className="relative aspect-[4/5] w-full overflow-hidden border border-background-200 bg-background-100">
                 <img
-                  src="https://readdy.ai/api/search-image?query=Bright%20documentary%20photograph%20of%20baseball%20players%20walking%20out%20of%20a%20clean%20wooden%20dugout%20onto%20a%20sunlit%20field%2C%20white%20and%20red%20uniforms%2C%20bats%20and%20helmets%20lined%20up%20on%20the%20bench%2C%20warm%20morning%20light%2C%20bright%20airy%20tones%2C%20shallow%20depth%20of%20field%2C%20editorial%20sports%20photography%2C%20no%20text&width=900&height=1100&seq=medvednica-about-dugout-day-05&orientation=portrait"
+                  src="/images/club-story.jpg"
                   alt="Medvednica players leaving the dugout before a game"
                   title="Medvednica Baseball Club | Match day in the dugout"
                   className="h-full w-full object-cover object-top"

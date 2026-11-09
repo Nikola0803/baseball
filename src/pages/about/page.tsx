@@ -23,9 +23,9 @@ export default function AboutPage() {
             </>
           }
           description="Nine friends, a borrowed glove and a patch of grass on the mountain. Thirty-two seasons later we are four squads, a free academy and a merch table that pays for the baseballs."
-          image="https://readdy.ai/api/search-image?query=Wide%20bright%20photograph%20of%20an%20amateur%20baseball%20field%20at%20the%20edge%20of%20a%20green%20forested%20mountain%2C%20small%20wooden%20dugout%20and%20hand%20painted%20scoreboard%2C%20crisp%20white%20chalk%20lines%2C%20clear%20late%20afternoon%20light%2C%20clean%20natural%20colours%2C%20editorial%20landscape%20sports%20photography%2C%20high%20detail%2C%20no%20text&width=1920&height=900&seq=medvednica-about-hero-day-06&orientation=landscape"
-          imageAlt="Medvednica Field at the edge of the forest"
-          imageTitle="Medvednica Baseball Club | Our field on the north slope"
+          image="/images/about-hero.jpg"
+          imageAlt="The Medvednica club family gathered together"
+          imageTitle="Medvednica Baseball Club | Our club family"
           stats={[
             { value: "1994", label: "Founded" },
             { value: "4", label: "Squads" },

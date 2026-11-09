@@ -120,9 +120,9 @@ export default function Hero() {
             <figure className="relative">
               <div className="relative aspect-[4/5] w-full overflow-hidden border border-foreground-950/15 bg-background-100">
                 <img
-                  src="https://readdy.ai/api/search-image?query=Bright%20daylight%20photograph%20of%20a%20classic%20American%20baseball%20infield%20with%20crisp%20white%20chalk%20lines%20and%20freshly%20raked%20reddish%20dirt%2C%20green%20grass%20beyond%20the%20diamond%2C%20a%20simple%20wooden%20dugout%20at%20the%20edge%2C%20clear%20pale%20blue%20sky%2C%20warm%20afternoon%20sun%2C%20clean%20minimal%20composition%2C%20editorial%20sports%20photography%2C%20high%20detail%2C%20no%20people%2C%20no%20text&width=900&height=1120&seq=medvednica-hero-daylight-01&orientation=portrait"
-                  alt="Medvednica Field prepared for a Saturday afternoon game"
-                  title="Medvednica Baseball Club | Medvednica Field on match day"
+                  src="/images/hero.jpg"
+                  alt="Medvednica players in the dugout on match day"
+                  title="Medvednica Baseball Club | The team on match day"
                   className="h-full w-full object-cover object-center"
                 />
                 <span className="pointer-events-none absolute left-3 top-3 h-6 w-6 border-l-2 border-t-2 border-background-50/80" />
