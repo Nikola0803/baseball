@@ -107,6 +107,22 @@ export default function Footer() {
             <span>Merch prices in EUR</span>
           </p>
         </div>
+
+        <div className="mt-6 flex justify-center border-t border-background-200 pt-6">
+          <a
+            href="https://palladio.hr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 text-[12px] text-foreground-400 transition-colors hover:text-primary-500"
+          >
+            <span className="font-label uppercase tracking-[0.2em]">Official sponsor</span>
+            <img
+              src="/images/palladio-logo.svg"
+              alt="Palladio"
+              className="h-9 w-auto opacity-70 transition-opacity group-hover:opacity-100"
+            />
+          </a>
+        </div>
       </div>
 
       <div className="pointer-events-none select-none overflow-hidden">

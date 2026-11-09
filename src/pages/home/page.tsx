@@ -10,6 +10,7 @@ import SeasonSection from "@/components/sections/SeasonSection";
 import MerchPreview from "@/components/sections/MerchPreview";
 import StoriesSection from "@/components/sections/StoriesSection";
 import CtaBand from "@/components/sections/CtaBand";
+import SponsorSection from "@/components/sections/SponsorSection";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <SeasonSection />
         <MerchPreview />
         <StoriesSection />
+        <SponsorSection />
         <CtaBand
           title="The gate opens at 12:30."
           description="Come watch a game, bring a friend, try a training session. Members get the covered stand, a sticker pack and first pick of the merch table."
