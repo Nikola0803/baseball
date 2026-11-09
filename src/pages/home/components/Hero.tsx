@@ -8,7 +8,7 @@ const facts = [
 ];
 
 const fixtureCells = [
-  { label: "Next home game", value: "Sat 07 Nov" },
+  { label: "Next home game", value: "Sat 12 Sep" },
   { label: "First pitch", value: "14:00" },
   { label: "Gates open", value: "12:30" },
 ];
@@ -140,7 +140,7 @@ export default function Hero() {
                   Next home game
                 </p>
                 <p className="font-poster mt-1.5 text-[28px] uppercase leading-none text-foreground-950">
-                  07 Nov · 14:00
+                  12 Sep · 14:00
                 </p>
                 <div className="my-3 h-px w-full bg-foreground-950/[0.12]" />
                 <p className="text-[14px] leading-snug text-foreground-600">

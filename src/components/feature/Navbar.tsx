@@ -177,7 +177,7 @@ export default function Navbar() {
                 Next home game
               </p>
               <p className="font-label text-[13px] uppercase tracking-[0.18em] text-primary-500">
-                07 Nov · 14:00
+                12 Sep · 14:00
               </p>
             </div>
             <div className="mt-4 flex items-center gap-2.5">

@@ -38,7 +38,7 @@ export default function SeasonSection() {
             index="04"
             eyebrow="2026 season"
             title="Every game, every bus ride."
-            description="Cup semi-final in November, winter series through December. Home games are free for members — bring a friend, they pay what they want at the gate."
+            description="League and cup games run from April through July, then return for the final stretch from September through October. Home games are free for members — bring a friend, they pay what they want at the gate."
           />
 
           <div className="flex w-full items-center gap-1 rounded-full border border-background-300 bg-background-50 p-1 sm:w-fit">
