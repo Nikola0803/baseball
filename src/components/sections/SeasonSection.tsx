@@ -11,11 +11,11 @@ const filters: { id: Filter; label: string }[] = [
 ];
 
 const standings = [
-  { team: "Zagreb Cowboys", played: 24, wins: 18, points: 54 },
-  { team: "Medvednica Bears", played: 24, wins: 18, points: 53 },
-  { team: "Split Anchors", played: 24, wins: 15, points: 45 },
-  { team: "Varaždin Kings", played: 24, wins: 12, points: 36 },
-  { team: "Rijeka Mariners", played: 24, wins: 9, points: 27 },
+  { team: "Medvednica", played: 8, wins: 6, points: 18 },
+  { team: "Zagreb Giants", played: 8, wins: 5, points: 15 },
+  { team: "SPAN", played: 8, wins: 4, points: 12 },
+  { team: "Špansko Panthers", played: 8, wins: 3, points: 9 },
+  { team: "Dubrava Bears", played: 8, wins: 2, points: 6 },
 ];
 
 const form = ["W", "W", "L", "W", "W"];
@@ -134,7 +134,7 @@ export default function SeasonSection() {
                   </p>
                 </div>
                 <span className="font-label text-[11px] uppercase tracking-[0.16em] text-foreground-400">
-                  R24
+                  R8
                 </span>
               </div>
 
@@ -152,7 +152,7 @@ export default function SeasonSection() {
 
               <div className="mt-2 space-y-0.5">
                 {standings.map((row, index) => {
-                  const isBears = row.team === "Medvednica Bears";
+                  const isBears = row.team === "Medvednica";
                   return (
                     <div
                       key={row.team}

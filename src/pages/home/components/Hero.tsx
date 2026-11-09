@@ -144,7 +144,7 @@ export default function Hero() {
                 </p>
                 <div className="my-3 h-px w-full bg-foreground-950/[0.12]" />
                 <p className="text-[14px] leading-snug text-foreground-600">
-                  Bears vs Cowboys · gates open 12:30
+                  Medvednica vs Zagreb Giants · gates open 12:30
                 </p>
                 <p className="font-label mt-3 flex items-center gap-2 text-[11px] uppercase tracking-[0.16em] text-primary-500">
                   <i className="ri-map-pin-line text-sm" />
