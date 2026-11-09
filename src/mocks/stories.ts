@@ -32,7 +32,7 @@ export const stories: Story[] = [
     image: "/images/story-women.jpg",
     body: [
       "The Little Bears academy runs every Saturday from 10:00 until noon, and it is free for anyone between six and twelve years old. No equipment, no experience, no signing up three months in advance.",
-      "Coaches Ana Jurić and Marko Babić run the sessions with a simple rule: everybody bats, everybody fields, everybody gets a turn at the water cooler. The autumn block runs until the end of November.",
+      "Coaches Katarina Mandić and Dario Guštin run the sessions with a simple rule: everybody bats, everybody fields, everybody gets a turn at the water cooler. The autumn block runs until the end of November.",
     ],
   },
   {

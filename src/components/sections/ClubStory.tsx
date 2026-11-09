@@ -58,7 +58,7 @@ export default function ClubStory() {
                 way twice.”
               </blockquote>
               <figcaption className="font-label mt-3 text-[12px] uppercase tracking-[0.2em] text-foreground-500">
-                Ivan Kovačević · head coach
+                Alen Beriš · head coach
               </figcaption>
             </figure>
 

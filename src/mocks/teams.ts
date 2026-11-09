@@ -14,7 +14,7 @@ export const teams: Team[] = [
     id: "seniors",
     name: "Medvednica Bears",
     ageGroup: "Senior men",
-    coach: "Ivan Kovačević",
+    coach: "Alen Beriš",
     training: "Tue & Thu · 18:30",
     record: "18 – 6",
     blurb:
@@ -25,7 +25,7 @@ export const teams: Team[] = [
     id: "softball",
     name: "Medvednica Females",
     ageGroup: "Women's softball",
-    coach: "Petra Novak",
+    coach: "Damir Mandić",
     training: "Mon & Wed · 19:00",
     record: "14 – 8",
     blurb:
@@ -36,7 +36,7 @@ export const teams: Team[] = [
     id: "juniors",
     name: "Medvednica Juniors",
     ageGroup: "U18",
-    coach: "Marko Babić",
+    coach: "Dario Guštin",
     training: "Wed & Fri · 17:00",
     record: "21 – 5",
     blurb:
@@ -47,7 +47,7 @@ export const teams: Team[] = [
     id: "little-league",
     name: "Little Bears",
     ageGroup: "U12",
-    coach: "Ana Jurić",
+    coach: "Katarina Mandić",
     training: "Sat · 10:00",
     record: "12 – 3",
     blurb:
