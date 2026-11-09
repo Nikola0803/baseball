@@ -111,7 +111,7 @@ export default function StoriesSection() {
               </div>
               <div className="mt-6 h-px w-full bg-background-200" />
               <p className="font-label mt-4 text-[11px] uppercase tracking-[0.16em] text-foreground-400">
-                Medvednica Baseball Club · club desk
+                Medvednica Baseball & Softball Club · club desk
               </p>
             </div>
           </div>

@@ -65,7 +65,7 @@ export default function Hero() {
             <div className="mt-7 flex items-center gap-4">
               <span className="h-[3px] w-14 bg-primary-500" />
               <span className="font-label text-[13px] uppercase tracking-[0.22em] text-foreground-500">
-                Baseball club · north slope
+                Baseball & softball club · north slope
               </span>
             </div>
 

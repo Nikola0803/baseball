@@ -1,5 +1,5 @@
 const tickerItems = [
-  "Medvednica Baseball Club",
+  "Medvednica Baseball & Softball Club",
   "Est. 1994",
   "Four squads · one dugout",
   "Play loud · wear red",

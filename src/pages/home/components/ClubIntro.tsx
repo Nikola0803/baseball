@@ -76,7 +76,7 @@ export default function ClubIntro() {
             </figure>
 
             <p className="mt-8 max-w-[54ch] text-[17px] leading-[1.75] text-foreground-600">
-              Medvednica Baseball Club started in 1994 with nine friends, a
+              Medvednica Baseball & Softball Club started in 1994 with nine friends, a
               borrowed glove and a field on the north slope of the mountain. Three
               decades later we still run it the same way: volunteers on the ground
               crew, former players coaching the kids, and every euro from the merch

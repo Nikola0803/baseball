@@ -18,8 +18,8 @@ export default function LogoMark({ size = "md", className = "" }: LogoMarkProps)
     >
       <img
         src={CREST_SRC}
-        alt="Medvednica Baseball Club crest"
-        title="Medvednica Baseball Club | Bear crest"
+        alt="Medvednica Baseball & Softball Club crest"
+        title="Medvednica Baseball & Softball Club | Bear crest"
         className="h-full w-full object-contain"
       />
     </span>

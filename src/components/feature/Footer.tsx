@@ -45,7 +45,7 @@ export default function Footer() {
                   Medvednica
                 </span>
                 <span className="font-label mt-1.5 block text-[11px] uppercase tracking-[0.22em] text-foreground-500">
-                  Baseball Club · Zagreb
+                  Baseball & Softball Club · Zagreb
                 </span>
               </span>
             </Link>
@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-3 border-t border-background-200 pt-6 text-[13px] text-foreground-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 Medvednica Baseball Club. All rights reserved.</p>
+          <p>© 2026 Medvednica Baseball & Softball Club. All rights reserved.</p>
           <p className="flex flex-wrap items-center gap-x-4 gap-y-2">
             <span>Medvednica Field · Zagreb, Croatia</span>
             <span className="hidden h-3 w-px bg-background-300 sm:inline-block" />

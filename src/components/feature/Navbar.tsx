@@ -50,7 +50,7 @@ export default function Navbar() {
             <Link
               to="/"
               className="group flex shrink-0 cursor-pointer items-center gap-3"
-              aria-label="Medvednica Baseball Club home"
+              aria-label="Medvednica Baseball & Softball Club home"
             >
               <LogoMark
                 size="md"
@@ -61,7 +61,7 @@ export default function Navbar() {
                   Medvednica
                 </span>
                 <span className="font-label mt-1.5 block text-[12px] uppercase leading-none tracking-[0.18em] text-foreground-400">
-                  Baseball Club · Zagreb
+                  Baseball & Softball Club · Zagreb
                 </span>
               </span>
             </Link>

@@ -40,7 +40,7 @@ export default function ClubStory() {
             <SectionHeading
               eyebrow="The club"
               title="Built on the north slope, not in a boardroom."
-              description="Medvednica Baseball Club started as a weekend experiment between friends who had watched too many American box scores. Three decades later we run four squads, a free academy for kids, and a merch line that funds the bats, balls and bus rides."
+              description="Medvednica Baseball & Softball Club started as a weekend experiment between friends who had watched too many American box scores. Three decades later we run four squads, a free academy for kids, and a merch line that funds the bats, balls and bus rides."
             />
 
             <div className="mt-8 max-w-[64ch] space-y-4 text-[17px] leading-[1.75] text-foreground-600 md:text-[18px]">

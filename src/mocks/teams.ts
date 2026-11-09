@@ -23,7 +23,7 @@ export const teams: Team[] = [
   },
   {
     id: "softball",
-    name: "Medvednica Reds",
+    name: "Medvednica Females",
     ageGroup: "Women's softball",
     coach: "Petra Novak",
     training: "Mon & Wed · 19:00",
