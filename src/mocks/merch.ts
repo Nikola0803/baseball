@@ -234,6 +234,8 @@ const photographedMerch: Partial<Record<string, string>> = {
   softball: "/images/product-softball.jpg",
   backpack: "/images/product-backpack.jpg",
   "drawstring-bag": "/images/product-backpack.jpg",
+  keychain: "/images/product-keychain.jpg",
+  "batting-gloves": "/images/product-batting-gloves.jpg",
 };
 
 export const merchItems: MerchItem[] = merchItemsBase.map((item) => ({
