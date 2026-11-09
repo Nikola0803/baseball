@@ -84,7 +84,7 @@ const merchItemsBase: MerchItem[] = [
     category: "Headwear",
     sizes: ["One size"],
     description:
-      "A warm black knit beanie with the Medvednica bear logo on the cuff. Made for colder game days and everyday winter wear.",
+      "A warm black knit beanie with the Medvednica bear logo on the cuff. Made for colder autumn game days and everyday wear.",
     image:
       "https://readdy.ai/api/search-image?query=Studio%20product%20photo%20of%20a%20black%20ribbed%20knit%20cuff%20beanie%20with%20a%20white%20line%20art%20roaring%20bear%20head%20patch%20stitched%20on%20the%20front%20of%20the%20cuff%2C%20plain%20light%20grey%20seamless%20backdrop%2C%20soft%20even%20studio%20lighting%2C%20subtle%20contact%20shadow%2C%20crisp%20high%20detail%2C%20minimal%20black%20and%20white%20club%20merchandise%20e-commerce%20photography&width=800&height=800&seq=medvednica-real-beanie-05&orientation=squarish",
   },
