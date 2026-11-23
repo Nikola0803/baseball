@@ -14,6 +14,9 @@ interface BagDrawerProps {
   onClose: () => void;
   onChangeQty: (id: string, size: string, delta: number) => void;
   onRemove: (id: string, size: string) => void;
+  onCheckout: () => void;
+  checkoutLoading?: boolean;
+  checkoutError?: string | null;
 }
 
 export default function BagDrawer({
@@ -23,6 +26,9 @@ export default function BagDrawer({
   onClose,
   onChangeQty,
   onRemove,
+  onCheckout,
+  checkoutLoading = false,
+  checkoutError = null,
 }: BagDrawerProps) {
   const detailed = lines
     .map((line) => {
@@ -155,28 +161,44 @@ export default function BagDrawer({
             </span>
           </div>
           <p className="mt-1 text-[11px] leading-relaxed text-foreground-500">
-            Bag is saved for this visit. Online checkout is not live yet — reserve
-            the order and we will confirm pickup at the clubhouse.
+            Secure payment by card via Stripe. You will be redirected to a secure
+            checkout page to complete your order.
           </p>
-          <Link
-            to="/contact"
-            onClick={onClose}
-            className={`font-label mt-3 flex min-h-[52px] w-full items-center justify-center gap-2 whitespace-nowrap  px-5 py-4 text-[13px] uppercase tracking-[0.16em] transition-colors ${
-              detailed.length === 0
-                ? "pointer-events-none bg-background-300 text-foreground-500"
+          {checkoutError && (
+            <p className="mt-2 flex items-start gap-1.5 text-[12px] leading-relaxed text-primary-600">
+              <i className="ri-error-warning-line mt-0.5 text-sm" />
+              {checkoutError}
+            </p>
+          )}
+          <button
+            type="button"
+            onClick={onCheckout}
+            disabled={detailed.length === 0 || checkoutLoading}
+            className={`font-label mt-3 flex min-h-[52px] w-full items-center justify-center gap-2 whitespace-nowrap px-5 py-4 text-[13px] uppercase tracking-[0.16em] transition-colors ${
+              detailed.length === 0 || checkoutLoading
+                ? "cursor-not-allowed bg-background-300 text-foreground-500"
                 : "cursor-pointer bg-foreground-950 text-background-50 hover:bg-foreground-800"
             }`}
           >
-            Reserve this order
-            <i className="ri-arrow-right-line text-sm" />
-          </Link>
-          <button
-            type="button"
-            onClick={onClose}
-            className="font-label mt-2 min-h-[48px] w-full cursor-pointer whitespace-nowrap py-3.5 text-[13px] uppercase tracking-[0.16em] text-foreground-600 transition-colors hover:text-foreground-900"
-          >
-            Keep shopping
+            {checkoutLoading ? (
+              <>
+                <i className="ri-loader-4-line animate-spin text-sm" />
+                Redirecting…
+              </>
+            ) : (
+              <>
+                Checkout · €{subtotal.toFixed(2)}
+                <i className="ri-bank-card-line text-sm" />
+              </>
+            )}
           </button>
+          <Link
+            to="/contact"
+            onClick={onClose}
+            className="font-label mt-2 flex min-h-[48px] w-full cursor-pointer items-center justify-center whitespace-nowrap py-3.5 text-[13px] uppercase tracking-[0.16em] text-foreground-600 transition-colors hover:text-foreground-900"
+          >
+            Need a bulk order? Message the club
+          </Link>
         </div>
       </aside>
     </>

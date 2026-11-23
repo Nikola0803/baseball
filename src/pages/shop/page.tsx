@@ -8,6 +8,7 @@ import BagDrawer, { type BagLine } from "@/pages/shop/components/BagDrawer";
 import MerchHero from "@/pages/shop/components/MerchHero";
 import MerchSheets from "@/pages/shop/components/MerchSheets";
 import { merchCategories, merchItems, type MerchCategory, type MerchItem } from "@/mocks/merch";
+import { startCheckout } from "@/lib/checkout";
 
 type CategoryFilter = "All" | MerchCategory;
 type SortKey = "featured" | "price-asc" | "price-desc" | "name";
@@ -26,6 +27,8 @@ export default function MerchPage() {
   const [bag, setBag] = useState<BagLine[]>([]);
   const [bagOpen, setBagOpen] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
+  const [checkoutLoading, setCheckoutLoading] = useState(false);
+  const [checkoutError, setCheckoutError] = useState<string | null>(null);
 
   const prices = merchItems.map((item) => item.price);
 
@@ -54,6 +57,36 @@ export default function MerchPage() {
     const timer = window.setTimeout(() => setToast(null), 2600);
     return () => window.clearTimeout(timer);
   }, [toast]);
+
+  // Show a confirmation / cancellation message when Stripe redirects back.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const status = params.get("checkout");
+    if (status === "success") {
+      setBag([]);
+      setToast("Payment successful — thank you! A confirmation is on its way.");
+    } else if (status === "cancelled") {
+      setToast("Checkout cancelled — your bag is still here.");
+    }
+    if (status) {
+      window.history.replaceState({}, "", window.location.pathname);
+    }
+  }, []);
+
+  const handleCheckout = async () => {
+    if (bag.length === 0 || checkoutLoading) return;
+    setCheckoutError(null);
+    setCheckoutLoading(true);
+    try {
+      await startCheckout(bag);
+      // On success the browser is redirected to Stripe, so nothing runs after.
+    } catch (err) {
+      setCheckoutError(
+        err instanceof Error ? err.message : "Could not start checkout."
+      );
+      setCheckoutLoading(false);
+    }
+  };
 
   const addToBag = (item: MerchItem, size: string, qty: number) => {
     setBag((current) => {
@@ -167,9 +200,9 @@ export default function MerchPage() {
           <div className="mt-4 flex items-start gap-2  border border-background-200 bg-background-100 px-4 py-3">
             <i className="ri-information-line mt-0.5 text-sm text-primary-500" />
             <p className="text-[13px] leading-relaxed text-foreground-500">
-              Suggested retail prices, all in EUR. Online checkout is not live yet —
-              add items to the bag and reserve them for pickup at the clubhouse, or
-              message the club for a size that is not listed.
+              All prices in EUR. Add items to the bag and pay securely by card at
+              checkout — or message the club for a bulk order or a size that is not
+              listed.
             </p>
           </div>
 
@@ -263,6 +296,9 @@ export default function MerchPage() {
         onClose={() => setBagOpen(false)}
         onChangeQty={changeQty}
         onRemove={removeLine}
+        onCheckout={handleCheckout}
+        checkoutLoading={checkoutLoading}
+        checkoutError={checkoutError}
       />
 
       {toast && (
