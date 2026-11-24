@@ -14,6 +14,9 @@ interface BagDrawerProps {
   onClose: () => void;
   onChangeQty: (id: string, size: string, delta: number) => void;
   onRemove: (id: string, size: string) => void;
+  onCheckout: () => void;
+  checkoutPending: boolean;
+  checkoutError: string | null;
 }
 
 export default function BagDrawer({
@@ -23,6 +26,9 @@ export default function BagDrawer({
   onClose,
   onChangeQty,
   onRemove,
+  onCheckout,
+  checkoutPending,
+  checkoutError,
 }: BagDrawerProps) {
   const detailed = lines
     .map((line) => {
@@ -155,13 +161,27 @@ export default function BagDrawer({
             </span>
           </div>
           <p className="mt-1 text-[11px] leading-relaxed text-foreground-500">
-            Bag is saved for this visit. Online checkout is not live yet — reserve
-            the order and we will confirm pickup at the clubhouse.
+            Pay securely through Stripe or reserve the order for pickup at the
+            clubhouse.
           </p>
+          {checkoutError && (
+            <p className="mt-2 text-[12px] leading-relaxed text-primary-600" role="alert">
+              {checkoutError}
+            </p>
+          )}
+          <button
+            type="button"
+            onClick={onCheckout}
+            disabled={detailed.length === 0 || checkoutPending}
+            className="font-label mt-3 flex min-h-[52px] w-full cursor-pointer items-center justify-center gap-2 whitespace-nowrap bg-primary-600 px-5 py-4 text-[13px] uppercase tracking-[0.16em] text-background-50 transition-colors hover:bg-primary-700 disabled:cursor-not-allowed disabled:bg-background-300 disabled:text-foreground-500"
+          >
+            {checkoutPending ? "Opening checkout…" : "Pay securely with Stripe"}
+            <i className={`${checkoutPending ? "ri-loader-4-line animate-spin" : "ri-lock-line"} text-sm`} />
+          </button>
           <Link
             to="/contact"
             onClick={onClose}
-            className={`font-label mt-3 flex min-h-[52px] w-full items-center justify-center gap-2 whitespace-nowrap  px-5 py-4 text-[13px] uppercase tracking-[0.16em] transition-colors ${
+            className={`font-label mt-2 flex min-h-[52px] w-full items-center justify-center gap-2 whitespace-nowrap  px-5 py-4 text-[13px] uppercase tracking-[0.16em] transition-colors ${
               detailed.length === 0
                 ? "pointer-events-none bg-background-300 text-foreground-500"
                 : "cursor-pointer bg-foreground-950 text-background-50 hover:bg-foreground-800"

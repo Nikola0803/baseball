@@ -26,6 +26,8 @@ export default function MerchPage() {
   const [bag, setBag] = useState<BagLine[]>([]);
   const [bagOpen, setBagOpen] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
+  const [checkoutPending, setCheckoutPending] = useState(false);
+  const [checkoutError, setCheckoutError] = useState<string | null>(null);
 
   const prices = merchItems.map((item) => item.price);
 
@@ -89,6 +91,31 @@ export default function MerchPage() {
     setBag((current) =>
       current.filter((line) => !(line.id === id && line.size === size))
     );
+  };
+
+  const startCheckout = async () => {
+    setCheckoutPending(true);
+    setCheckoutError(null);
+
+    try {
+      const response = await fetch("/api/create-checkout-session", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ lines: bag }),
+      });
+      const data = (await response.json()) as { url?: string; error?: string };
+
+      if (!response.ok || !data.url) {
+        throw new Error(data.error ?? "Unable to start checkout.");
+      }
+
+      window.location.assign(data.url);
+    } catch (error) {
+      setCheckoutError(
+        error instanceof Error ? error.message : "Unable to start checkout."
+      );
+      setCheckoutPending(false);
+    }
   };
 
   return (
@@ -167,9 +194,9 @@ export default function MerchPage() {
           <div className="mt-4 flex items-start gap-2  border border-background-200 bg-background-100 px-4 py-3">
             <i className="ri-information-line mt-0.5 text-sm text-primary-500" />
             <p className="text-[13px] leading-relaxed text-foreground-500">
-              Suggested retail prices, all in EUR. Online checkout is not live yet —
-              add items to the bag and reserve them for pickup at the clubhouse, or
-              message the club for a size that is not listed.
+              Suggested retail prices, all in EUR. Add items to your bag and pay
+              securely through Stripe, reserve them for clubhouse pickup, or message
+              the club for a size that is not listed.
             </p>
           </div>
 
@@ -263,6 +290,9 @@ export default function MerchPage() {
         onClose={() => setBagOpen(false)}
         onChangeQty={changeQty}
         onRemove={removeLine}
+        onCheckout={startCheckout}
+        checkoutPending={checkoutPending}
+        checkoutError={checkoutError}
       />
 
       {toast && (
