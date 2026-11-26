@@ -103,7 +103,15 @@ export default function MerchPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ lines: bag }),
       });
-      const data = (await response.json()) as { url?: string; error?: string };
+      const responseText = await response.text();
+      let data: { url?: string; error?: string } = {};
+      try {
+        data = JSON.parse(responseText) as { url?: string; error?: string };
+      } catch {
+        data.error = response.ok
+          ? "Checkout returned an invalid response."
+          : `Checkout server error (${response.status}). Please try again.`;
+      }
 
       if (!response.ok || !data.url) {
         throw new Error(data.error ?? "Unable to start checkout.");
