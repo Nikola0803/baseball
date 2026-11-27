@@ -117,7 +117,7 @@ export default function Footer() {
           >
             <span className="font-label uppercase tracking-[0.2em]">Official sponsor</span>
             <img
-              src="/images/palladio-logo.svg"
+              src="/images/palladio-sponsor-logo.png"
               alt="Palladio"
               className="h-9 w-auto opacity-70 transition-opacity group-hover:opacity-100"
             />

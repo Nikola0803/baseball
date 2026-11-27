@@ -23,8 +23,8 @@ export default function SponsorSection() {
 
           <div className="flex min-h-28 items-center justify-center border-y border-background-200 py-6 md:border-x md:border-y-0 md:px-8 md:py-0">
             <img
-              src="/images/palladio-logo.svg"
-              alt="Palladio — We Make Legends"
+              src="/images/palladio-sponsor-logo.png"
+              alt="Palladio — We Make Jewelry"
               className="h-auto w-full max-w-[410px]"
             />
           </div>

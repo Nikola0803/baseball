@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function ManifestoBand() {
   return (
-    <section className="relative flex min-h-[560px] w-full items-end overflow-hidden bg-foreground-950 md:min-h-[660px]">
+    <section className="relative flex min-h-[720px] w-full items-end overflow-hidden bg-foreground-950 md:min-h-[820px]">
       <img
         src="/images/manifesto.jpg"
         alt="Medvednica team entering the field"
@@ -17,19 +17,37 @@ export default function ManifestoBand() {
           <div className="lg:col-span-8">
             <p className="font-label flex items-center gap-3 text-[12px] uppercase tracking-[0.24em] text-primary-400">
               <span className="inline-block h-[2px] w-9 bg-primary-500" />
-              The ground crew
+              Our story
             </p>
             <h2 className="font-heading mt-5 text-[clamp(38px,7.2vw,96px)] uppercase leading-[0.84] tracking-[-0.035em] text-background-50">
-              The field is ours
+              The ones who
               <br />
-              because <span className="text-outline-paper">we built it.</span>
+              <span className="text-outline-paper">show up.</span>
             </h2>
-            <p className="mt-6 max-w-[52ch] text-[16px] leading-[1.75] text-background-50/70 md:text-[18px]">
-              No groundskeeper on the payroll. No sponsor logos on the backstop.
-              Parents rake the infield on Friday nights, former players run the
-              kids through drills on Sunday mornings, and the merch table pays for
-              the baseballs.
-            </p>
+            <div className="mt-6 max-w-[60ch] space-y-4 text-[15px] leading-[1.7] text-background-50/70 md:text-[17px]">
+              <p>We don&apos;t have a field to call our own. Not yet.</p>
+              <p>
+                Our home is the space in front of a schoolyard. A place where a few
+                lines on the ground become a baseball diamond, where borrowed space
+                becomes a place to belong, and where every practice brings us one
+                step closer to something bigger.
+              </p>
+              <p>
+                We build this from the ground up. With people who give their time,
+                share what they know, teach the next generation, and believe that a
+                baseball community is worth building.
+              </p>
+              <p>
+                And we&apos;re not building alone. Palladio stands beside us—a proud
+                sponsor, a partner, and a guiding hand helping us find our way
+                forward.
+              </p>
+              <p>
+                We may not have everything a baseball club dreams of. But we have
+                the people, the passion, and the determination to make it happen.
+              </p>
+              <p>This is where our story begins.</p>
+            </div>
           </div>
 
           <div className="lg:col-span-4">
